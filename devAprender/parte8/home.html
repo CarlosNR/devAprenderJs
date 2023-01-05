@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso Js</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+</head>
+<body>
+    <div>
+        <h2>3:39:00 em diante</h2>  
+        &emsp; 
+        &nbsp;
+        <p>Funções prontas de arrays</p>
+        <p>Arrow functions</p>
+
+    <p>Exemplo de função normal</p>
+<xmp>
+    const marca = marcas.find(function(marca){
+        return marca.nome === 'a'
+    })
+</xmp> 
+    <p>
+        Remove palavra function<br>
+        Se for 1 parametro n precisa de () nem return<br>
+        Se for 0 ou mais de 1 parametros precisa de ()
+    </p>    
+<xmp>
+    const arrow = marcas.find(
+        (marca) => {
+            return marca.nome === 'a'
+        }
+    )
+    
+    
+    const arrow2 = marcas.find(
+            marca => marca.nome === 'a'
+    )
+</xmp>
+<xmp>
+array.forEach: valor, posição, todos os valores
+terceiro.forEach(
+    (numero,chave,c) => console.log(
+                            numero, chave, c
+                        )
+)
+</xmp>
+    </div>
+</body>
+</html>

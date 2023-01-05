@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso Js</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+</head>
+<body>
+    <div>
+        <h2>1:37:00 em diante</h2>  
+        &emsp; 
+        &nbsp;
+        <p>op ternario, parenteses é opcional:</br>let z = x > y ? x : y
+        </p>
+        <p>factory functions, cria objeto sem nome: </p>
+            
+        <p>Construtor: quando o atributo tem o mesmo nome da variavel, não precisa ser explicitada a igualdade:</br>
+
+<xmp>
+function criarCelular(
+    marcaCelular, 
+    tamanhoTela, 
+    capacidadeBateria
+    ){
+        return {
+            marcaCelular,
+            tamanhoTela,
+            capacidadeBateria,
+            ligar() {
+                console.log("Ligando...")
+            }
+        }
+}
+</xmp>
+    
+<xmp>
+function criarCelular(
+    marcaCelular, 
+    tamanhoTela, 
+    capacidadeBateria
+){
+    return {
+        marcaCelular = marcaCelular,
+        tamanhoTela = tamanhoTela,
+        capacidadeBateria = capacidadeBateria,
+        ligar() {
+            console.log("Ligando...")
+        }
+    }
+}
+</xmp>
+
+        </p>
+    <p>tag xmp para mostrar codigo no html</p>
+
+        
+
+    </div>
+</body>
+</html>

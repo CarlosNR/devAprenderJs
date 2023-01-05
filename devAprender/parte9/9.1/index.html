@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Diferença entre
+        InnerHTML, innerText e value
+    </title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+ 
+<body style="text-align:center;">
+   
+  <h1 style="color:green">GeeksforGeeks</h1>
+ 
+    <div id="test">
+        Aqui contém apenas o texto sem tags
+        <codes>código</codes> e
+        <italic>italico</italic>.
+        <p></p>
+        <input id="valor" value="1">
+    </div>
+
+    <p></p>
+    <button onClick="innerHTMLFn()">
+        innerHTML
+    </button>
+    <button onClick="innerTextFn()">
+        innerText
+    </button>
+    <button onClick="valueFn()">
+        value
+    </button>
+    <p id="op"></p>
+ 
+    <script>
+        function innerTextFn() {
+            var x = document.getElementById('test')
+            alert(x.innerText)
+        }
+ 
+        function innerHTMLFn() {
+            var x = document.getElementById('test')
+            alert(x.innerHTML)
+        }
+
+        function valueFn() {
+            var x = document.getElementById('valor')
+            alert("Pega valor da propriedade value, porém só funciona para inputs: "+x.value)
+        }
+    </script>
+</body>
+ 
+</html>

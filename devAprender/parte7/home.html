@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso Js</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+</head>
+<body>
+    <div>
+        <h2>2:56:00 em diante</h2>  
+        &emsp; 
+        &nbsp;
+        <p>template literal</p>
+        <p>variavel dentro de texto: `${var}`</p>
+        <p>class Date</p>
+        <p>Conteudo de 2 objetos iguais sao identidos</p>
+        <p>Dois objetos iguais não são identicos, pois ocupam espaços distindos de memória</p>
+<xmp>
+
+    let endereco = criarEndereco(
+        "Dos bobos", 
+        "Não tinha teto", 
+        0
+    )
+    
+    let endereco2 = criarEndereco(
+        "Dos bobos", 
+        "Não tinha teto", 
+        0
+    )
+    
+    let endereco3 = endereco2
+--------------------------------------
+    endereco === endereco2 
+    false
+
+    endereco2 === endereco3
+    false
+
+    endereco.cep === endereco2.cep 
+    true
+</xmp>
+        <p>array e objeto sao quase equivalentes em Js, tu pode ter:</br></p>
+        <ul>
+            <li>array de arrays</li>
+            <li>array de objetos</li>
+            <li>objeto com parametro objeto</li>
+            <li>objeto com parametro array</li>
+        </ul>
+    </div>
+</body>
+</html>

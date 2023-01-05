@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso Js</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+</head>
+<body>
+    <div>
+        <h2>2:42:00 em diante</h2>  
+        &emsp; 
+        &nbsp;
+        <p>Objetos Js sao totalmente dinamicos, criaveis e deletaveis mesmo de fora da classe</p>
+        <p>operador spread ... : passa argumentos do objeto/array espalhados como parametro.</br>
+        array = [1,2,3]
+        ...array -> 1 2 3
+        </p>
+        <p>
+            String vs Objeto, ambas compartilham funções de string, tipo .length.<br><br>
+            Obs1: Com exceção de .replace (MESMO NAO INDICANDO ERRO, não altera nada, a menos que se use .split() antes.<br><br>
+            Obs2: Se o .split() for usado antes, .replace dá erro mesmo sendo um objeto<br><br>
+            Obs3: .split() transforma string e objeto em objeto, onde cada palavra é um item.<br><br>
+            Obs4: ao usar .split() .join() .replace(), replace volta a funcionar<br><br>
+            Obs5 .join() transforma em tipo string<br>
+            <br>
+            string -> tipo string<br>
+            const msg = 'bom dia'<br><br>
+            classe string -> tipo objeto<br>
+            const msg2 = new String ('boa tarde')<br>
+        </p>
+        <p>
+            Na class string cada item é um caracter. Embora msg2.indexOf("palavra") funcione, ele retorna o index da primeira letra da "palavra" "p".<br>
+            Pr
+
+        </p>
+        <p>funções prontas -> math</p>
+        <ul>
+            <li>Porcentagem aleatoria Math.random()</li>
+            <li>Float para Int Math.trunc(3.5)</li>
+            <li>Teto Math.ceil(3.5) </li>
+            <li>Piso Math.floor(3.5)</li>
+            <li>Arredondamento Math.round(3.5)</li>
+            <li>Menor valor Math.min(1,9)</li>
+            <li>Maior valor Math.max(1,9)</li>
+        </ul>
+
+    </div>
+</body>
+</html>
